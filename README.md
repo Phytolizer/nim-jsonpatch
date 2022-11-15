@@ -1,7 +1,9 @@
 # JSON Patch
 
 The JSON Patch is a standardized format for describing procedural changes
-to JSON documents. It is specified by RFC 6902. A patch document could look like this:
+to JSON documents. It is specified by [RFC 6902](https://www.rfc-editor.org/rfc/rfc6902).
+
+A patch document could look like this:
 
 ```json
 [
