@@ -23,6 +23,13 @@ and `*.out.json` is the result.
 If `*.out.json` is missing, then the patch is either just performing a "test",
 or it is intended to fail for one reason or another.
 
+## API
+
+The API entry point is `applyPatch`, defined in `jansson/patch`. Call it with two JSON objects,
+the first specifying the target document, the second specifying the patch.
+
+The function can throw, so be sure to catch InvalidPatchError and/or PatchTestFailError.
+
 ## Dependencies
 
 This library depends only on the [Jansson](https://github.com/akheron/jansson) C library.
